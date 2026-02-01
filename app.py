@@ -138,15 +138,15 @@ class Summarizer:
             logger.info("Loading summarization model: %s", self.model_id)
             self._tokenizer = AutoTokenizer.from_pretrained(self.model_id)
             self._model = AutoModelForSeq2SeqLM.from_pretrained(self.model_id)
-            self._model.eval()
+            self._model.eval() # type: ignore
             torch.set_num_threads(1)
 
     def summarize(self, text: str, max_input_tokens: int = 900, **gen_kwargs) -> str:
         self._ensure_loaded()
-        tok = self._tokenizer(text, truncation=True, return_tensors="pt", max_length=max_input_tokens)
+        tok = self._tokenizer(text, truncation=True, return_tensors="pt", max_length=max_input_tokens) # type: ignore
         with torch.no_grad():
-            ids = self._model.generate(**tok, **gen_kwargs)
-        return self._tokenizer.decode(ids[0], skip_special_tokens=True)
+            ids = self._model.generate(**tok, **gen_kwargs) # type: ignore
+        return self._tokenizer.decode(ids[0], skip_special_tokens=True) # type: ignore
 
     def chunked(self, text: str, chunk_words: int = 300, **gen_kwargs) -> str:
         words = text.split()
