@@ -77,7 +77,6 @@ Model used (CPU-friendly):
 
 *   `sshleifer/distilbart-cnn-12-6`
 
-> ⚠️ Note: Abstractive summarization can hallucinate. For high‑risk domains, consider extractive summaries or grounding/verification.
 
 ***
 
