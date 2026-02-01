@@ -102,7 +102,7 @@ Open:
 ### 2B) Run the Streamlit demo
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 ***
@@ -139,9 +139,7 @@ Use these in the app or notebook:
 
 ***
 
-## 📊 Suggested Screenshots for GitHub
-
-To make your repo pop:
+## 📊 APP Functionality Snapshots
 
 1.  Semantic search results table:
   <img width="1478" height="460" alt="image" src="https://github.com/user-attachments/assets/560cc08e-a2c2-4f19-9743-752e603730dc" />
@@ -179,37 +177,3 @@ Fixes used in this repo:
 
 *   Convert dataset columns to lists (`list(train["text"])`)
 *   Avoid passing unhashable objects into cached functions (or prefix args with `_`)
-
-### Plotly not showing in some notebooks
-
-Export the visual:
-
-```python
-fig.write_html("bertopic_barchart.html")
-```
-
-***
-
-## 🌱 Future Improvements (Nice-to-have)
-
-*   Add **MMR diversity** to reduce duplicate semantic search results
-*   Add a **reranker** (cross‑encoder) for improved retrieval relevance
-*   Add **extractive summarization baseline** (TextRank) to compare with abstractive
-*   Add evaluation metrics:
-    *   semantic retrieval (Recall\@K with weak labels)
-    *   summarization (ROUGE on datasets with references)
-
-***
-
-## 🙌 Credits / Libraries
-
-*   HuggingFace `datasets`
-*   `sentence-transformers`
-*   `faiss-cpu`
-*   `bertopic`, `umap-learn`, `hdbscan`
-*   `transformers`, `torch`
-*   `streamlit`
-
-***
-
-If you want, I can also generate a **“TEGNA-style” README** with a stronger business framing (editor workflow story + architecture diagram + key takeaways) — just say the word.
