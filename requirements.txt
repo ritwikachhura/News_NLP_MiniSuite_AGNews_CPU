@@ -1,0 +1,14 @@
+# Minimal requirements for News_NLP_APP (refactored)
+datasets>=2.0.0
+sentence-transformers>=2.2.2
+umap-learn>=0.5.3
+hdbscan>=0.8.30
+faiss-cpu>=1.7.3
+bertopic>=0.13.0
+transformers>=4.30.0
+torch>=1.13.1
+pandas>=1.5.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+matplotlib>=3.6.0
+streamlit>=1.25.0
