@@ -27,7 +27,7 @@ This repo implements all three in a **CPU-friendly**, demo‑ready format.
 
 ```text
 .
-├── News_NLP_MiniSuite_AGNews_CPU.ipynb   # Main notebook (all modules + explanation)
+
 ├── app.py                               # Streamlit demo app
 ├── requirements.txt                     # Dependencies
 └── README.md                            # You are here
