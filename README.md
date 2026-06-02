@@ -2,7 +2,7 @@
 
 **Semantic Search • Topic Modeling • Summarization + Streamlit Demo**
 
-This repository is a **portfolio-ready NLP mini-suite** built on real news text (**AG News**). It demonstrates an end‑to‑end content workflow often used in newsroom/content platforms:
+This repository is a **NLP mini-suite** built on real news text (**AG News**). It demonstrates an end‑to‑end content workflow often used in newsroom/content platforms:
 
 ✅ **Semantic Search** (Sentence‑BERT + FAISS)  
 ✅ **Topic Modeling** (BERTopic with CPU‑safe settings)  
